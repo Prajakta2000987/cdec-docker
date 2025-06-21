@@ -16,6 +16,6 @@ USER apache2
 
 EXPOSE 80
 
-ENTRYPOINT apache2
+ENTRYPOINT apachectl -DFOREGROUND
 
-CMD --help
+CMD apachectl
